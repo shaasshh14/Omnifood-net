@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Food Project</title>
-    <!-- <link rel="stylesheet" href="vendors/css/grid.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="resources/css/style.css">
-</head>
+</head>    
 <body>
     <header>
         <nav>
             <div class="row">
                 <img class="logo" src="resources/css/img/logo-white.png" alt="logo-png">
                 <img class="logo-black" src="resources/css/img/logo.png" alt="logo-png">
-                <ul class="main-nav">
+                <a class="nav-icon">&#9776;</a>
+                <ul class="main-nav js--main-nav">
                     <li><a href="#">Food Delivery</a></li>
                     <li><a href="#">How it Works</a></li>
                     <li><a href="#">Our Cities</a></li>
@@ -28,12 +29,12 @@
             <h1>Goodbye junk food. <br>
                 Hello super healthy meals.
             </h1>
-            <a class="btn btn-full" href="#">I'm Hungry!!</a>
-            <a class="btn btn-ghost" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I'm Hungry!!</a>
+            <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
-    <section class="section-features">
-        <div class="row">
+    <section class="section-features js--section-features">
+        <div class="row js--wp-1">
             <h2>Get Food Fast &mdash; Not Fast Food</h2>
             <p class="long-copy">
                 Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
@@ -126,7 +127,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-2 steps-box">
-                <img class="app-screen" src="resources/css/img/phone.jpeg" alt="phone-image">
+                <img class="app-screen js--wp-2" src="resources/css/img/phone.jpeg" alt="phone-image">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -146,7 +147,7 @@
                 </a>
                 <a href="#">
                     <img src="resources/css/img/playstore.png" alt="Get it on Google Play" class="store-btn">
-                </a>
+                </a>                
                   
             </div>
         </div>
@@ -156,7 +157,7 @@
         <div class="row">
             <h2>We're currently in these cities</h2>
         </div>
-        <div class="row js--wp-3 animated fadeIn">
+        <div class="row js--wp-3">
             <div class="col span-1-of-4 box">
                 <img src="resources/css/img/lisbon-3.jpg" alt="Lisbons">
                 <h3>Lisbon</h3>
@@ -256,7 +257,7 @@
         </div>
         <div class="row">
             <div class="col span-1-of-3">
-                <div class="plan-box js--wp-4 animated pulse">
+                <div class="plan-box js--wp-4">
                     <div>
                         <h3>Premium</h3>
                         <p class="plan-price">$399 <span>/ month</span></p>
@@ -411,18 +412,85 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
     <script>
-        window.addEventListener('scroll', function () {
-            const nav = document.querySelector('.row-head');
-            const header = document.querySelector('header');
-            if (window.scrollY >= header.offsetHeight) {
-                nav.classList.add('sticky');
-            } 
-            else {
-                nav.classList.remove('sticky');
-            }
+        $(document).ready(function () {
+    
+            /* Sticky Navigation */
+            $('.js--section-features').waypoint(function (direction) {
+                if (direction === "down") {
+                    $('nav').addClass('sticky');
+                } else {
+                    $('nav').removeClass('sticky');
+                }
+            }, {
+                offset: '60px'
+            });
+    
+            /* Scroll on buttons */
+            $('.js--scroll-to-plans').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('.js--section-plans').offset().top
+                }, 1000);
+            });
+    
+            $('.js--scroll-to-start').click(function () {
+                $('html, body').animate({
+                    scrollTop: $('.js--section-features').offset().top
+                }, 1000);
+            });
+    
+            /* Navigation scroll */
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (
+                    location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+                    location.hostname === this.hostname
+                ) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+    
+            /* Animation on scroll (Updated to Animate.css v4) */
+            $('.js--wp-1').waypoint(function () {
+                $('.js--wp-1').addClass('animate__animated animate__fadeIn');
+            }, {
+                offset: '50%'
+            });
+    
+            $('.js--wp-2').waypoint(function () {
+                $('.js--wp-2').addClass('animate__animated animate__fadeInUp');
+            }, {
+                offset: '50%'
+            });
+    
+            $('.js--wp-3').waypoint(function () {
+                $('.js--wp-3').addClass('animate__animated animate__fadeIn');
+            }, {
+                offset: '50%'
+            });
+    
+            $('.js--wp-4').waypoint(function () {
+                $('.js--wp-4').addClass('animate__animated animate__pulse');
+            }, {
+                offset: '50%'
+            });
+    
+            /* Mobile nav toggle */
+            $('.nav-icon').click(function () {
+                $('.main-nav').slideToggle(200);
+            });
+    
         });
     </script>
+    
 </body>
 </html>
