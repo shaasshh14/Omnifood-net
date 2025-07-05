@@ -1,0 +1,86 @@
+# 🥗 Omnifood - Premium Food Delivery Website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1b88bb9-fb39-4565-98a1-f0f888ad33f4/deploy-status)](https://app.netlify.com/sites/shas-omnifood/deploys)
+
+A fully responsive, modern food delivery website built using **HTML**, **CSS**, and **JavaScript**.
+
+## 🌐 Live Demo  
+👉 [Visit Site](https://shas-omnifood.netlify.app/)
+
+---
+
+## 📸 Screenshots
+
+<table>
+<tr>
+<td><img src="https://shas-omnifood.netlify.app/resources/css/img/1.jpeg" width="250"/></td>
+<td><img src="https://shas-omnifood.netlify.app/resources/css/img/customer-1.jpg" width="250"/></td>
+<td><img src="https://shas-omnifood.netlify.app/resources/css/img/phone.jpeg" width="250"/></td>
+</tr>
+</table>
+
+---
+
+## 🛠 Tech Stack
+
+- ✅ HTML5
+- ✅ CSS3 (Flexbox, Grid, Media Queries)
+- ✅ JavaScript (jQuery, Waypoints, Animate.css)
+- ✅ Responsive Design
+- ✅ Ionicons
+
+---
+
+## ✨ Features
+
+- Fully responsive for all screen sizes
+- Sticky navigation bar
+- Smooth scroll animations
+- Mobile-friendly burger menu
+- Testimonials, pricing plans, and contact form
+- Live deployment via **Netlify**
+
+---
+
+## 🚀 Getting Started
+
+### Clone the repo
+
+```bash
+git clone https://github.com/your-username/omnifood-project.git
+cd omnifood-project
+```
+
+### Open in browser
+
+Just open `index.html` in your browser (no build steps required).
+
+---
+
+## 📂 Folder Structure
+
+```
+Omnifood/
+│
+├── resources/
+│   └── css/
+│       ├── style.css
+│       ├── img/
+│
+├── index.html
+└── README.md
+```
+
+---
+
+## 🧑‍💻 Author
+
+**Shashank Tiwari**  
+📍 [shas-omnifood.netlify.app](https://shas-omnifood.netlify.app/)  
+📧 [Reach me via GitHub](https://github.com/shaasshh14)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
