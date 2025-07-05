@@ -3,8 +3,10 @@
 A modern, fully responsive food delivery website that offers a seamless user experience across all devices. Built using semantic HTML5, custom CSS3 (including Flexbox and Grid), and interactive JavaScript features like smooth scrolling, sticky navigation, scroll-triggered animations, and a responsive mobile menu. Designed with user accessibility and performance in mind, and deployed live using Netlify.
 
 
-## 🌐 Live Demo  
-👉 [Visit Site](https://shas-omnifood.netlify.app/)
+## 🚀 Live Demo
+
+👉 **Experience it live here:**  
+[![Visit Omnifood Website](https://img.shields.io/badge/🌐_LIVE-DEMO-green?style=for-the-badge)](https://shas-omnifood.netlify.app/)
 
 ---
 
