@@ -1,6 +1,7 @@
 # 🥗 Omnifood - Premium Food Delivery Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e1b88bb9-fb39-4565-98a1-f0f888ad33f4/deploy-status)](https://app.netlify.com/sites/shas-omnifood/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5ae74dc6-5cbb-4a01-9b01-e343ed01241c/deploy-status)](https://app.netlify.com/sites/shas-omnifood/deploys)
+
 
 A fully responsive, modern food delivery website built using **HTML**, **CSS**, and **JavaScript**.
 
