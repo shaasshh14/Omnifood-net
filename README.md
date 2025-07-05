@@ -1,9 +1,7 @@
 # 🥗 Omnifood - Premium Food Delivery Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/5ae74dc6-5cbb-4a01-9b01-e343ed01241c/deploy-status)](https://app.netlify.com/sites/shas-omnifood/deploys)
+A modern, fully responsive food delivery website that offers a seamless user experience across all devices. Built using semantic HTML5, custom CSS3 (including Flexbox and Grid), and interactive JavaScript features like smooth scrolling, sticky navigation, scroll-triggered animations, and a responsive mobile menu. Designed with user accessibility and performance in mind, and deployed live using Netlify.
 
-
-A fully responsive, modern food delivery website built using **HTML**, **CSS**, and **JavaScript**.
 
 ## 🌐 Live Demo  
 👉 [Visit Site](https://shas-omnifood.netlify.app/)
@@ -58,20 +56,6 @@ cd omnifood-project
 Just open `index.html` in your browser (no build steps required).
 
 ---
-
-## 📂 Folder Structure
-
-```
-Omnifood/
-│
-├── resources/
-│   └── css/
-│       ├── style.css
-│       ├── img/
-│
-├── index.html
-└── README.md
-```
 
 ---
 
