@@ -13,9 +13,10 @@ A fully responsive, modern food delivery website built using **HTML**, **CSS**, 
 
 <table>
 <tr>
-<td><img src="https://shas-omnifood.netlify.app/resources/css/img/1.jpeg" width="250"/></td>
-<td><img src="https://shas-omnifood.netlify.app/resources/css/img/customer-1.jpg" width="250"/></td>
-<td><img src="https://shas-omnifood.netlify.app/resources/css/img/phone.jpeg" width="250"/></td>
+<td><img src="https://github.com/shaasshh14/Omnifood-net/blob/main/preview/1.png" width="250"/></td>
+<td><img src="https://github.com/shaasshh14/Omnifood-net/blob/main/preview/2.png" width="250"/></td>
+<td><img src="https://github.com/shaasshh14/Omnifood-net/blob/main/preview/3.png" width="250"/></td>
+<td><img src="https://github.com/shaasshh14/Omnifood-net/blob/main/preview/4.png" width="250"/></td>
 </tr>
 </table>
 
