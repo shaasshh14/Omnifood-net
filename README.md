@@ -1,11 +1,12 @@
 # 🥗 Omnifood - Premium Food Delivery Website
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e1b88bb9-fb39-4565-98a1-f0f888ad33f4/deploy-status)](https://app.netlify.com/sites/shas-omnifood/deploys)
+A modern, fully responsive food delivery website that offers a seamless user experience across all devices. Built using semantic HTML5, custom CSS3 (including Flexbox and Grid), and interactive JavaScript features like smooth scrolling, sticky navigation, scroll-triggered animations, and a responsive mobile menu. Designed with user accessibility and performance in mind, and deployed live using Netlify.
 
-A fully responsive, modern food delivery website built using **HTML**, **CSS**, and **JavaScript**.
 
-## 🌐 Live Demo  
-👉 [Visit Site](https://shas-omnifood.netlify.app/)
+## 🚀 Live Demo
+
+👉 **Experience it live here:**  
+[![Visit Omnifood Website](https://img.shields.io/badge/🌐_LIVE-DEMO-green?style=for-the-badge)](https://shas-omnifood.netlify.app/)
 
 ---
 
@@ -13,9 +14,10 @@ A fully responsive, modern food delivery website built using **HTML**, **CSS**, 
 
 <table>
 <tr>
-<td><img src="https://shas-omnifood.netlify.app/resources/css/img/1.jpeg" width="250"/></td>
-<td><img src="https://shas-omnifood.netlify.app/resources/css/img/customer-1.jpg" width="250"/></td>
-<td><img src="https://shas-omnifood.netlify.app/resources/css/img/phone.jpeg" width="250"/></td>
+<td><img src="https://github.com/shaasshh14/Omnifood-net/blob/main/preview/1.png" width="250"/></td>
+<td><img src="https://github.com/shaasshh14/Omnifood-net/blob/main/preview/2.png" width="250"/></td>
+<td><img src="https://github.com/shaasshh14/Omnifood-net/blob/main/preview/3.png" width="250"/></td>
+<td><img src="https://github.com/shaasshh14/Omnifood-net/blob/main/preview/4.png" width="250"/></td>
 </tr>
 </table>
 
@@ -56,20 +58,6 @@ cd omnifood-project
 Just open `index.html` in your browser (no build steps required).
 
 ---
-
-## 📂 Folder Structure
-
-```
-Omnifood/
-│
-├── resources/
-│   └── css/
-│       ├── style.css
-│       ├── img/
-│
-├── index.html
-└── README.md
-```
 
 ---
 
