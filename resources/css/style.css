@@ -446,8 +446,8 @@ cite {
     font-size: 90%;
     margin-top: 25px;
     display: block;
-    margin-top: 40px;
-    /* margin-bottom: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 cite img {
@@ -685,10 +685,18 @@ footer p {
         margin-bottom: 30px;
     }
 
+    .meal-showcase li {
+        width: 50%;
+    }
+
     .app-screen {
         width: 40% !important;
         display: block;
         margin: 0 auto;
+    }
+
+    .works-step {
+        gap: 0px;
     }
 
     .steps-box {
